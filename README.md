@@ -16,7 +16,7 @@ Run the script from the directory containing your `*_particles.star` files:
 
 ```bash
 module load imod
-python convert_star.py --x_dim <X_SIZE> --y_dim <Y_SIZE> --z_dim <Z_SIZE>
+python rln2mod.py --x_dim <X_SIZE> --y_dim <Y_SIZE> --z_dim <Z_SIZE>
 ```
 
 - `--x_dim`, `--y_dim`, `--z_dim`: tomogram dimensions in pixels.
