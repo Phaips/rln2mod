@@ -24,7 +24,7 @@ def process_star_files(x_dim, y_dim, z_dim):
             all_matches.extend(matches)
 
     if not all_matches:
-        print("⚠️  No .star files found in this directory. Make sure you're in the right working directory and your files end in '.star' (or '_particles.star').")
+        print("No .star files found in this directory. Make sure you're in the right working directory and your files end in '.star' (or '_particles.star').")
         return
 
     for star_file in sorted(set(all_matches)):
