@@ -1,4 +1,4 @@
-# convert_star.py
+# rln2mod.py
 
 A simple script to convert Relion STAR particle coordinates into IMOD `.mod` point models.
 
