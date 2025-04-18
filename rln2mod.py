@@ -2,6 +2,7 @@ import os
 import subprocess
 import argparse
 import starfile
+import sys
 
 
 def process_star_files(x_dim, y_dim, z_dim):
