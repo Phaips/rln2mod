@@ -1,6 +1,6 @@
 # rln2mod.py
 
-A simple script to convert Relion STAR particle coordinates into IMOD `.mod` point models. It will run IMOD's `point2model` on all generated .txt files containing the particle coordinates (top left origin). All `.star` files will be read from the folder from which the script is run.
+A simple script to convert RELION5 `particle.star` coordinates into IMOD `.mod` point models. It will run IMOD's `point2model` on all generated .txt files containing the particle coordinates (top left origin). All `.star` files will be read from the folder from which the script is run.
 
 ## Requirements
 
