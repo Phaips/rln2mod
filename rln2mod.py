@@ -2,7 +2,6 @@ import os
 import subprocess
 import argparse
 import starfile
-import sys
 
 
 def process_star_files(x_dim, y_dim, z_dim):
@@ -36,21 +35,10 @@ def process_star_files(x_dim, y_dim, z_dim):
 
 
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(
-        description='Convert Relion STAR to .mod models',
-        add_help=True       # this is actually the default
-    )
-    p.add_argument('--x_dim', type=int, required=True,
-                   help='tomogram X size (px)')
-    p.add_argument('--y_dim', type=int, required=True,
-                   help='tomogram Y size (px)')
-    p.add_argument('--z_dim', type=int, required=True,
-                   help='tomogram Z size (px)')
-
-    # if you run with no arguments, print the help and exit
-    if len(sys.argv) == 1:
-        p.print_help(sys.stderr)
-        sys.exit(1)
-
+    p = argparse.ArgumentParser(description='Convert Relion STAR to .mod models')
+    p.add_argument('--x_dim', type=int, required=True, help='tomogram X size (px)')
+    p.add_argument('--y_dim', type=int, required=True, help='tomogram Y size (px)')
+    p.add_argument('--z_dim', type=int, required=True, help='tomogram Z size (px)')
     args = p.parse_args()
+
     process_star_files(args.x_dim, args.y_dim, args.z_dim)
